@@ -2,10 +2,10 @@
 
 //react
 import React from 'react'
-import Link from 'next/link'
 
 //contexts
 import useAppContextFirestore from '../contexts/firestore-storys'
+import Link from 'next/link'
 
 const Storys = () => {
 
@@ -15,7 +15,7 @@ const Storys = () => {
         <>
             {
                 firestoreStory.map((story: any, index: any) => (
-                    <Link href="/" className='bg-white md:p-4 p-8 rounded-xl md:w-[95%] w-full md:min-h-[250px] min-h-[150px]' key={index}>
+                    <main className='bg-white md:p-4 p-8 rounded-xl md:w-[95%] w-full md:min-h-[250px] min-h-[150px]' key={index}>
                         <div className='md:w-3/4'>
                             <div className='md:text-sm text-xs flex items-center justify-start gap-3' >
                                 <div className='flex items-center gap-2' >
@@ -25,10 +25,13 @@ const Storys = () => {
                                 <h1 className='text-[var(--cinza)]' >{story.date}</h1>
                             </div>
 
-                            <div className='my-3 space-y-1' >
-                                <h1 className='md:text-xl text-lg font-bold' >{story.title}</h1>
-                                <p className='md:text-sm text-xs md:max-h-[200px] overflow-hidden text-justify text-[var(--cinza)] font-thin first-letter:capitalize '>{story.description}</p>
-                                <button className='text-[var(--verde)] text-center w-full outline-none' >Ver</button>
+                            <Link href='/' className='my-3 space-y-1 flex items-start justify-center flex-col' >
+                                <h1 className='md:text-xl text-lg font-bold hover:text-[var(--verde)] duration-200' >{story.title}</h1>
+                                <p className='md:text-sm text-xs md:max-h-[200px] overflow-hidden text-justify text-[var(--cinza)] font-thin first-letter:capitalize'>{story.description}</p>
+                            </Link>
+
+                            <div className='flex items-center justify-center' >
+                                <Link href='/' className='text-[var(--verde)] text-center outline-none hover:scale-105 duration-200' >Ler Tudo</Link >
                             </div>
 
                             <div>
@@ -36,7 +39,7 @@ const Storys = () => {
                             </div>
 
                         </div>
-                    </Link>
+                    </main>
                 ))
             }
         </>
