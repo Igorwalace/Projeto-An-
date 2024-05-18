@@ -13,6 +13,9 @@ import Story_Side_Category from '@/app/componentes/story-side-category'
 
 //react
 import React from 'react'
+import Link from 'next/link'
+
+//icons
 import { ThumbsDown, ThumbsUp } from 'lucide-react'
 
 interface PostsSingleProps {
@@ -48,11 +51,11 @@ const Posts_Single = ({ params: { id } }: PostsSingleProps) => {
                       </div>
                       <h1 className='text-[var(--cinza)]' >{post.date}</h1>
                       <div className='flex items-center justify-start gap-3 mx-3' >
-                        <button><ThumbsUp /></button>
+                        <button  ><ThumbsUp /></button>
                         <button><ThumbsDown /></button>
                       </div>
-                      <h1 className='font-thin text-[var(--cinza)] bg-[#ffddaa] p-2 rounded-xl' >{post.category}</h1>
                     </div>
+                      <Link href='/' className='font-thin text-[var(--cinza)] md:text-sm text-xs bg-[#ffddaa] p-2 rounded-xl ' >{post.category}</Link>
 
                     <div className='md:my-14 my-5' >
                       <p className='md:text-[15px] text-sm text-[var(--cinza)] font-thin first-letter:capitalize'>{post.description}</p>
