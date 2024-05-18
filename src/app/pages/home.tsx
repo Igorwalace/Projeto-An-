@@ -7,8 +7,8 @@ const Home = () => {
         <>
             <main>
 
-                <div className='md:px-24 md:py-5 px-10 py-3 bg-white' ><Header /></div>
-                <div className='md:px-24 md:py-5 px-10 py-3' ><Main /></div>
+                <div className='md:px-24 md:py-5 px-10 py-3 bg-white' ><Header tags={true} /></div>
+                <div className='md:px-24 md:py-5' ><Main /></div>
 
             </main>
         </>
