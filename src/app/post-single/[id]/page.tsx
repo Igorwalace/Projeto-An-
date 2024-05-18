@@ -38,7 +38,7 @@ const Posts_Single = ({ params: { id } }: PostsSingleProps) => {
                 <main key={post.id} className='md:flex items-start justify-between' >
                   <div className="md:w-[70%] w-full">
                     <div>
-                      <h1 className='md:text-4xl text-2xl font-bold' >{post.title}</h1>
+                      <h1 className='md:text-4xl text-2xl font-extrabold' >{post.title}</h1>
                     </div>
 
                     <div className='md:text-sm text-xs flex items-center justify-start gap-3 my-5' >
@@ -47,11 +47,11 @@ const Posts_Single = ({ params: { id } }: PostsSingleProps) => {
                         <h1 className='font-bold' >{post.name}</h1>
                       </div>
                       <h1 className='text-[var(--cinza)]' >{post.date}</h1>
-                      <div className='flex items-center justify-start gap-3 ml-3' >
+                      <div className='flex items-center justify-start gap-3 mx-3' >
                         <button><ThumbsUp /></button>
                         <button><ThumbsDown /></button>
                       </div>
-                      <h1 className='font-thin text-[var(--cinza)] bg-[#FEF1DD] p-2 rounded-xl' >{post.category}</h1>
+                      <h1 className='font-thin text-[var(--cinza)] bg-[#ffddaa] p-2 rounded-xl' >{post.category}</h1>
                     </div>
 
                     <div className='md:my-14 my-5' >
@@ -62,7 +62,7 @@ const Posts_Single = ({ params: { id } }: PostsSingleProps) => {
 
                   </div>
 
-                  <div className='md:w-[25%] w-full p-2' >
+                  <div className='md:w-[25%] w-full' >
                     <Story_Side_Related post={post} />
                     <Story_Side_Category post={post} />
                   </div>
