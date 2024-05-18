@@ -7,7 +7,7 @@ import Link from 'next/link'
 //contexts
 import useAppContextFirestore from '../contexts/firestore-storys'
 
-interface Story{
+export interface Story{
     name: string,
     id: string,
     date: string,

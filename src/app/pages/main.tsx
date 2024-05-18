@@ -8,6 +8,7 @@ import { LibraryBig } from 'lucide-react'
 //pages
 import Logo from '../componentes/logo'
 import Storys from '../componentes/storys'
+import Side_Categories from '../componentes/side-categories'
 
 const Main = () => {
     return (
@@ -31,12 +32,7 @@ const Main = () => {
 
                     <div className='my-3 px-1 border-b-[var(--cinza) border-b-2 pb-4' >
                         <h1 className='text-[var(--cinza)] mb-3' >Explorar</h1>
-                        <div className="flex items-start justify-center flex-col gap-4">
-                            <button className='border-[var(--cinza)] bg-[#ECECEC] border-[1px] p-1 px-6 rounded-2xl text-[var(--verde)] text-sm hover:scale-[1.01] duration-200' >Categorias</button>
-                            <button className='border-[var(--cinza)] bg-[#ECECEC] border-[1px] p-1 px-6 rounded-2xl text-[var(--verde)] text-sm hover:scale-[1.01] duration-200' >Categorias</button>
-                            <button className='border-[var(--cinza)] bg-[#ECECEC] border-[1px] p-1 px-6 rounded-2xl text-[var(--verde)] text-sm hover:scale-[1.01] duration-200' >Categorias</button>
-                            <button className='border-[var(--cinza)] bg-[#ECECEC] border-[1px] p-1 px-6 rounded-2xl text-[var(--verde)] text-sm hover:scale-[1.01] duration-200' >Categorias</button>
-                        </div>
+                        <Side_Categories />
                     </div>
 
                     <div className='my-3 text-left px-2' >
