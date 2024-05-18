@@ -16,7 +16,7 @@ import React from 'react'
 import Link from 'next/link'
 
 //icons
-import { ThumbsDown, ThumbsUp } from 'lucide-react'
+import { Clock12, MessageSquareWarning, Share2, ThumbsDown, ThumbsUp } from 'lucide-react'
 
 interface PostsSingleProps {
   params: {
@@ -49,19 +49,27 @@ const Posts_Single = ({ params: { id } }: PostsSingleProps) => {
                         <p className='w-7 h-7 bg-blue-900 rounded-full' ></p>
                         <h1 className='font-bold' >{post.name}</h1>
                       </div>
-                      <h1 className='text-[var(--cinza)]' >{post.date}</h1>
-                      <div className='flex items-center justify-start gap-3 mx-3' >
-                        <button  ><ThumbsUp /></button>
-                        <button><ThumbsDown /></button>
+                      <h1 className='text-[var(--cinza)] flex items-center gap-1' ><Clock12 size={20} />{post.date}</h1>
+
+                    </div>
+
+                    <div className='flex items-center justify-between gap-3' >
+                      <div className='flex items-center justify-center gap-3' >
+                        <Link href='/' className='font-thin text-[var(--cinza)] md:text-sm text-xs bg-[#ffddaa] p-2 rounded-xl border-[#c3a77a] border-[1px]' >{post.category}</Link>
+                        <div className='flex items-center gap-2' >
+                          <button><ThumbsUp /></button>
+                          <button><ThumbsDown /></button>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <button><Share2 /></button>
+                        <button><MessageSquareWarning /></button>
                       </div>
                     </div>
-                      <Link href='/' className='font-thin text-[var(--cinza)] md:text-sm text-xs bg-[#ffddaa] p-2 rounded-xl ' >{post.category}</Link>
 
                     <div className='md:my-14 my-5' >
                       <p className='md:text-[15px] text-sm text-[var(--cinza)] font-thin first-letter:capitalize'>{post.description}</p>
                     </div>
-
-
 
                   </div>
 
