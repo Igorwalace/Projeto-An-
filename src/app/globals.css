@@ -23,6 +23,32 @@
     transform-origin: 100% 100%;
     animation: move 1s linear infinite;
 }
+.loader2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    background: #fff;
+    box-shadow: -24px 0 #fff, 24px 0 #fff;
+    box-sizing: border-box;
+    animation: shadowPulse 2s linear infinite;
+}
+
+@keyframes shadowPulse {
+    33% {
+        background: #fff;
+        box-shadow: -24px 0 var(--verde), 24px 0 #fff;
+    }
+    66% {
+        background: var(--verde);
+        box-shadow: -24px 0 #fff, 24px 0 #fff;
+    }
+    100% {
+        background: #fff;
+        box-shadow: -24px 0 #fff, 24px 0 var(--verde);
+    }
+}
 @keyframes move {
     0%,
     100% {

@@ -24,10 +24,10 @@ const Side_Categories = () => {
                     firestoreStory.length < 1
                         ?
                         <>
-                            <button className='border-[var(--cinza)] bg-[#ECECEC] border-[1px] p-1 px-6 rounded-2xl text-[var(--verde)] text-sm hover:scale-[1.01] duration-200'>Carregando...</button>
-                            <button className='border-[var(--cinza)] bg-[#ECECEC] border-[1px] p-1 px-6 rounded-2xl text-[var(--verde)] text-sm hover:scale-[1.01] duration-200'>Carregando...</button>
-                            <button className='border-[var(--cinza)] bg-[#ECECEC] border-[1px] p-1 px-6 rounded-2xl text-[var(--verde)] text-sm hover:scale-[1.01] duration-200'>Carregando...</button>
-                            <button className='border-[var(--cinza)] bg-[#ECECEC] border-[1px] p-1 px-6 rounded-2xl text-[var(--verde)] text-sm hover:scale-[1.01] duration-200'>Carregando...</button>
+                            <div className='border-[var(--cinza)] bg-[#ECECEC] border-[1px] py-2 px-6 rounded-2xl text-[var(--verde)] text-sm hover:scale-[1.01] duration-200 w-full flex items-center justify-center'><p className="loader2"></p></div>
+                            <div className='border-[var(--cinza)] bg-[#ECECEC] border-[1px] py-2 px-6 rounded-2xl text-[var(--verde)] text-sm hover:scale-[1.01] duration-200 w-full flex items-center justify-center'><p className="loader2"></p></div>
+                            <div className='border-[var(--cinza)] bg-[#ECECEC] border-[1px] py-2 px-6 rounded-2xl text-[var(--verde)] text-sm hover:scale-[1.01] duration-200 w-full flex items-center justify-center'><p className="loader2"></p></div>
+                            <div className='border-[var(--cinza)] bg-[#ECECEC] border-[1px] py-2 px-6 rounded-2xl text-[var(--verde)] text-sm hover:scale-[1.01] duration-200 w-full flex items-center justify-center'><p className="loader2"></p></div>
                         </>
                         :
                         <>
