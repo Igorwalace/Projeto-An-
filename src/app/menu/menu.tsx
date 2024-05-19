@@ -31,13 +31,13 @@ const Menu = () => {
                 <SheetContent>
                     <SheetHeader>
                         <SheetTitle className='flex items-center justify-between border-b-[var(--cinza)] border-b-[1px] pb-2' >
-                            <span className='md:text-base text-sm' >Menu</span>
+                            <span className='md:text-base text-base' >Menu</span>
                         </SheetTitle>
                     </SheetHeader>
                     <div className='my-5' >
                         <div className='flex items-center justify-between' >
+                            <button className='border-[var(--verde)] text-[var(--verde)] border-[1px] p-[6px] px-4 rounded-xl hover:scale-105 duration-200 text-sm' >Login</button>
                             <button className='bg-[var(--verde)] p-2 px-3 rounded-xl text-white hover:scale-105 duration-200 text-sm' >Registrar</button>
-                            <button className='border-[var(--verde)] text-[var(--verde)] border-[1px] p-2 px-4 rounded-xl hover:scale-105 duration-200 text-sm' >Login</button>
                         </div>
                     </div>
                     <div className="my-5">

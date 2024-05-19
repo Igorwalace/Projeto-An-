@@ -21,7 +21,7 @@ const Side_Category_Home = ({ hidden, width }: PropsCheck) => {
                     <h1 className='text-[var(--cinza)] mb-3' >Explorar</h1>
                         <Side_Categories />
                 </div>
-                <div className='my-3 text-left px-2' >
+                <div className='my-3 px-2' >
                     <Logo />
                 </div>
             </div>

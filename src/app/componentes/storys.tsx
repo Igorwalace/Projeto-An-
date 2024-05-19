@@ -47,7 +47,7 @@ const Storys = () => {
             }
             {
                 firestoreStory.length > 0 &&
-                <h1 className='mt-5 text-center' >Você chegou ao fim.</h1>
+                <h1 className='mt-5 md:mb-0 mb-5 text-center' >Você chegou ao fim.</h1>
             }
         </>
     )

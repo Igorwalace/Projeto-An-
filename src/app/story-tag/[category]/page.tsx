@@ -56,7 +56,7 @@ const Story_Tag = ({ params: { category } }: TagCategory) => {
                     }
                 </div>
 
-                <Side_Category_Home />
+                <Side_Category_Home width={true} />
             </main>
         </>
     )

@@ -29,7 +29,7 @@ const Tags_Header = () => {
             {
                 Categorys.map((categorys: Array) => (
                     <div key={categorys.id} >
-                        <Link href={`/story-tag/${categorys.category}`} className={`font-medium ${active == `/story-tag/${categorys.category}` && 'text-[var(--verde)] font-extrabold'}`} >{categorys.category}</Link>
+                        <Link href={`/story-tag/${categorys.category}`} className={`flex hover:scale-95 duration-200 font-medium ${active == `/story-tag/${categorys.category}` && 'text-[var(--verde)] font-extrabold'}`} >{categorys.category}</Link>
                     </div>
                 ))
             }
