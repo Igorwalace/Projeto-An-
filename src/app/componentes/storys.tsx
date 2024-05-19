@@ -28,11 +28,13 @@ const Storys = () => {
     return (
         <>
             {
-                firestoreStory.length < 1 &&
+                firestoreStory.length > 1 &&
                 <>
-                    <main className='w-[95%] bg-[#e1e1e1] h-[200px] rounded-xl' ></main>
-                    <main className='w-[95%] bg-[#e1e1e1] h-[50px] rounded-xl my-1' ></main>
-                    <main className='w-[95%] bg-[#e1e1e1] h-[50px] rounded-xl' ></main>
+                    <div className="flex items-center justify-center flex-col">
+                        <main className='w-[87%] bg-[#e1e1e1] h-[200px] rounded-xl' ></main>
+                        <main className='w-[87%] bg-[#e1e1e1] h-[200px] rounded-xl my-2' ></main>
+                        <main className='w-[87%] bg-[#e1e1e1] h-[200px] rounded-xl' ></main>
+                    </div>
                     <Loading />
                 </>
             }
