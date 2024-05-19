@@ -28,7 +28,7 @@ const Storys = () => {
     return (
         <>
             {
-                firestoreStory.length > 1 &&
+                firestoreStory.length < 1 &&
                 <>
                     <div className="flex items-center justify-center flex-col">
                         <main className='w-[87%] bg-[#e1e1e1] h-[200px] rounded-xl' ></main>
