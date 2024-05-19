@@ -34,7 +34,7 @@ const Posts = ({ story }: PostProps) => {
                 </div>
                 <div className='absolute top-7 right-8 md:top-2 md:right-4' >
                     <div className="flex items-center justify-end gap-2">
-                        <Link href='/' className='font-thin text-[var(--cinza)] md:text-sm text-xs bg-[#ffddaa] p-2 rounded-xl border-[#c3a77a] border-[1px]' >{story.category}</Link>
+                        <h1 className='font-thin text-[var(--cinza)] md:text-sm text-xs bg-[#ffddaa] p-2 rounded-xl border-[#c3a77a] border-[1px]' >{story.category}</h1>
                         <button><Share2 /></button>
                         <button><MessageSquareWarning /></button>
                     </div>
