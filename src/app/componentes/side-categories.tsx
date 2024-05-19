@@ -32,10 +32,10 @@ const Side_Categories = () => {
                         :
                         <>
 
-                            <Link href={`https://www.freespaace.com/`} target='_blank' className='border-[var(--cinza)] bg-[#ECECEC] border-[1px] p-1 px-6 rounded-2xl text-[var(--verde)] text-sm hover:scale-[1.01] duration-200 w-full text-center'>Inspiração</Link>
-                            <Link href={`/`} className='border-[var(--cinza)] bg-[#ECECEC] border-[1px] p-1 px-6 rounded-2xl text-[var(--verde)] text-sm hover:scale-[1.01] duration-200 w-full text-center'>Menu</Link>
                             <Link href={`/`} className='border-[var(--cinza)] bg-[#ECECEC] border-[1px] p-1 px-6 rounded-2xl text-[var(--verde)] text-sm hover:scale-[1.01] duration-200 w-full text-center'>Início</Link>
                             <Link href={`/story-tag/Confissões`} className='border-[var(--cinza)] bg-[#ECECEC] border-[1px] p-1 px-6 rounded-2xl text-[var(--verde)] text-sm hover:scale-[1.01] w-full duration-200 text-center' >Confissões</Link>
+                            <Link href={`https://meu-website-igor.vercel.app/`} target='_blank' className='border-[var(--cinza)] bg-[#ECECEC] border-[1px] p-1 px-6 rounded-2xl text-[var(--verde)] text-sm hover:scale-[1.01] duration-200 w-full text-center'>Meu site</Link>
+                            <Link href={`https://www.freespaace.com/`} target='_blank' className='border-[var(--cinza)] bg-[#ECECEC] border-[1px] p-1 px-6 rounded-2xl text-[var(--verde)] text-sm hover:scale-[1.01] duration-200 w-full text-center'>Inspiração</Link>
                         </>
                 }
             </div>
