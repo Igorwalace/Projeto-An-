@@ -15,6 +15,7 @@ import React from 'react'
 
 //intarface
 import { Story } from '@/app/componentes/storys'
+import Loading from '@/app/componentes/laoding'
 
 interface TagCategory {
     params: {
@@ -41,7 +42,12 @@ const Story_Tag = ({ params: { category } }: TagCategory) => {
                     </div>
 
                     {
-                        firestoreStoryEmpty.length < 1 ? <h1 className='text-center' >Nada encontrado</h1> :
+                        firestoreStoryEmpty.length < 1 ? 
+                        <div>
+                            <h1 className='text-center' >Nada encontrado</h1>
+                            <Loading />
+                        </div>
+                        :
                         firestoreStory
                         .filter((post: Story)=> post.category === NewCategory)
                         .map((story: Story) => (
