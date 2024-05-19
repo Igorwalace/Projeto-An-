@@ -22,7 +22,7 @@ const Main = () => {
                     <Storys />
                 </div>
 
-                <Side_Category_Home />
+                <Side_Category_Home width={true} hidden={true} tagsCenter={false} />
             </main>
         </>
     )

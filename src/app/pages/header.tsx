@@ -8,6 +8,7 @@ import { AlignRight, ChevronLeft, ChevronRight } from 'lucide-react'
 import Logo from '../componentes/logo'
 import Button_Back from '../componentes/button-back'
 import Tags_Header from '../componentes/tags-header'
+import Menu from '../menu/menu'
 
 interface PropsHeader {
   tags?: boolean
@@ -34,17 +35,14 @@ const Header = ({ tags, buttonBack }: PropsHeader) => {
             buttonBack != true &&
             <Logo />
           }
-
-          <button className='hover:scale-105 duration-200' >
-            <span><AlignRight /></span>
-          </button>
+          <Menu />
         </nav>
 
         {
           tags &&
           <div className='flex justify-between items-center mt-5 w-full' >
             <button className='block lg:hidden text-[var(--verde)] font-bold md:text-base text-sm whitespace-nowrap rounded-md p-1 md:mr-2 bg-white bg-[rgba(196,196,196,0.1)]' ><ChevronLeft /></button>
-            <main className='flex justify-between items-center md:gap-10 gap-4 text-[var(--cinza)] md:text-sm text-xs overflow-x-auto scrollbar-hide lg:w-full w-[90%] md:h-5 h-5 ' >
+            <main className='flex justify-between items-center md:gap-10 gap-4 text-[var(--cinza)] md:text-sm text-xs lg:overflow-x-hidden overflow-x-auto scrollbar-hide lg:w-full w-[90%] md:h-5 h-5 ' >
               <Tags_Header />
             </main>
             <button className='block lg:hidden text-[var(--verde)] font-bold md:text-base text-sm whitespace-nowrap rounded-md p-1 md:ml-2 bg-white bg-[rgba(196,196,196,0.1)]' ><ChevronRight /></button>
