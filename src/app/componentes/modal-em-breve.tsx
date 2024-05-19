@@ -21,9 +21,9 @@ interface ModalProps {
 const ModalEmBreve = ({ setIsOpenModalBreve, isOpenModalBreve }: ModalProps) => {
     return (
         <AlertDialog open={isOpenModalBreve} onOpenChange={setIsOpenModalBreve} >
-            <AlertDialogContent>
-                <AlertDialogHeader>
-                    <AlertDialogTitle className='text-[var(--verde)]' >Calma aí!</AlertDialogTitle>
+            <AlertDialogContent className='rounded-xl' >
+                <AlertDialogHeader className='text-left' >
+                    <AlertDialogTitle className='text-[var(--verde)] font-bold' >Calma aí!</AlertDialogTitle>
                     <AlertDialogDescription>
                         Você não pode escrever histórias ainda. Leia as que estão disponiveis.
                     </AlertDialogDescription>
