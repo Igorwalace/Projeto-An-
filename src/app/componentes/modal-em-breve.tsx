@@ -21,7 +21,7 @@ interface ModalProps {
 const ModalEmBreve = ({ setIsOpenModalBreve, isOpenModalBreve }: ModalProps) => {
     return (
         <AlertDialog open={isOpenModalBreve} onOpenChange={setIsOpenModalBreve} >
-            <AlertDialogContent className='rounded-xl' >
+            <AlertDialogContent className='rounded-xl max-w-[95%]' >
                 <AlertDialogHeader className='text-left' >
                     <AlertDialogTitle className='text-[var(--verde)] font-bold' >Calma aí!</AlertDialogTitle>
                     <AlertDialogDescription>
