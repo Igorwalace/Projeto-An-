@@ -30,7 +30,7 @@ const Menu = () => {
             <Sheet open={isOpenMenu} onOpenChange={setIsOpenMenu} >
                 <SheetContent>
                     <SheetHeader>
-                        <SheetTitle className='flex items-center justify-between border-b-[var(--cinza)] border-b-[1px] pb-5' >
+                        <SheetTitle className='flex items-center justify-between border-b-[var(--cinza)] border-b-[1px] pb-2' >
                             <span className='md:text-base text-sm' >Menu</span>
                         </SheetTitle>
                     </SheetHeader>
