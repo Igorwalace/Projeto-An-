@@ -41,7 +41,7 @@ const Menu = () => {
                         </div>
                     </div>
                     <div className="my-5">
-                        <Side_Category_Home />
+                        <Side_Category_Home hidden={true}  />
                     </div>
                 </SheetContent>
             </Sheet>
