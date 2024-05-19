@@ -2,7 +2,7 @@
 import React from 'react'
 
 //icons
-import { AlignRight } from 'lucide-react'
+import { AlignRight, ChevronLeft, ChevronRight } from 'lucide-react'
 
 //pages
 import Logo from '../componentes/logo'
@@ -43,10 +43,11 @@ const Header = ({ tags, buttonBack }: PropsHeader) => {
         {
           tags &&
           <div className='flex justify-between items-center mt-5 w-full' >
+            <button className='block lg:hidden text-[var(--verde)] font-bold md:text-base text-sm whitespace-nowrap rounded-md p-1 md:mr-2 bg-white bg-[rgba(196,196,196,0.1)]' ><ChevronLeft /></button>
             <main className='flex justify-between items-center md:gap-10 gap-4 text-[var(--cinza)] md:text-sm text-xs overflow-x-auto scrollbar-hide lg:w-full w-[90%] md:h-5 h-5 ' >
               <Tags_Header />
             </main>
-            <button className='block lg:hidden text-[var(--verde)] font-bold md:text-base text-sm whitespace-nowrap pl-2 bg-white' >Ver tudo</button>
+            <button className='block lg:hidden text-[var(--verde)] font-bold md:text-base text-sm whitespace-nowrap rounded-md p-1 md:ml-2 bg-white bg-[rgba(196,196,196,0.1)]' ><ChevronRight /></button>
           </div>
         }
 

@@ -14,7 +14,7 @@ import {
 const Menu = () => {
     return (
         <>
-            <Sheet open={} >
+            <Sheet>
                 <SheetContent>
                     <SheetHeader>
                         <SheetTitle>Are you absolutely sure?</SheetTitle>
