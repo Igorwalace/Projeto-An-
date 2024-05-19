@@ -10,7 +10,7 @@ const Logo = () => {
     return (
         <Link href='https://meu-website-igor.vercel.app/' target='_blank' className='hover:scale-105 duration-200 text-[var(--verde)]'>
             {/* logo */}
-            <h1 className={`font-black md:text-3xl text-2xl ${russo_One.className} `} >Anõ</h1>
+            <h1 className={`font-black md:text-4xl text-3xl ${russo_One.className} `} >Anõ</h1>
         </Link>
     )
 }
