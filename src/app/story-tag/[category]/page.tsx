@@ -28,7 +28,7 @@ const Story_Tag = ({ params: { category } }: TagCategory) => {
     const NewCategory = decodeURIComponent(category)
     const { firestoreStory } = useAppContextFirestore()
 
-    const firestoreStoryEmpty = firestoreStory.filter((post: Story)=> post.category === NewCategory)
+    const firestoreStoryEmpty = firestoreStory.filter((post: Story) => post.category === NewCategory)
 
     return (
         <>
@@ -41,18 +41,18 @@ const Story_Tag = ({ params: { category } }: TagCategory) => {
                         <h1 className='capitalize' >{NewCategory}</h1>
                     </div>
 
-                    {
-                        firestoreStoryEmpty.length < 1 ? 
-                        <div>
-                            <h1 className='text-center' >Nada encontrado</h1>
-                            <Loading />
-                        </div>
-                        :
-                        firestoreStory
-                        .filter((post: Story)=> post.category === NewCategory)
-                        .map((story: Story) => (
-                            <Posts story={story} key={story.id} />
-                        ))
+                    {firestoreStory.length < 1 && <Loading />}
+                    {   
+                        firestoreStoryEmpty.length < 1 ?
+                            <div>
+                                <h1 className='text-center' >Nada encontrado</h1>
+                            </div>
+                            :
+                            firestoreStory
+                                .filter((post: Story) => post.category === NewCategory)
+                                .map((story: Story) => (
+                                    <Posts story={story} key={story.id} />
+                                ))
                     }
                 </div>
 
