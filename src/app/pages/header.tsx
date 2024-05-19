@@ -42,7 +42,7 @@ const Header = ({ tags, buttonBack }: PropsHeader) => {
           tags &&
           <div className='flex justify-between items-center md:mt-5 mt-3 w-full' >
             <button className='block lg:hidden text-[var(--verde)] font-bold md:text-base text-sm whitespace-nowrap rounded-md p-1 md:mr-2 bg-white bg-[rgba(196,196,196,0.1)]' ><ChevronLeft /></button>
-            <main className='flex justify-between items-center md:gap-10 gap-4 text-[var(--cinza)] md:text-sm text-xs lg:overflow-x-hidden overflow-x-auto scrollbar-hide lg:w-full w-[90%] md:h-5 h-5 ' >
+            <main className='flex justify-between items-center md:gap-10 gap-6 text-[var(--cinza)] md:text-sm text-xs lg:overflow-x-hidden overflow-x-auto scrollbar-hide lg:w-full w-[90%] md:h-5 h-5 ' >
               <Tags_Header />
             </main>
             <button className='block lg:hidden text-[var(--verde)] font-bold md:text-base text-sm whitespace-nowrap rounded-md p-1 md:ml-2 bg-white bg-[rgba(196,196,196,0.1)]' ><ChevronRight /></button>
